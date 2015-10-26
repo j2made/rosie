@@ -29,7 +29,7 @@ Run `brew-time.sh` in this repo. It installs the following:
 
 #### Binaries
 - [nvm](https://github.com/creationix/nvm)
-- [ffmpeg](http://ffmpeg.org/
+- [ffmpeg](http://ffmpeg.org/)
 
 #### Applications
 - [Google Chrome](https://www.google.com/chrome/browser/desktop/)
