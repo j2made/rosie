@@ -70,5 +70,5 @@ echo "installing fonts..."
 brew cask install ${fonts[@]}
 
 # Setup for NVM
-mkdir ~/.nvm
+[[ -d ~/.nvm ]] || mkdir ~/.nvm
 

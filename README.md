@@ -14,7 +14,9 @@ If this helps you, cool. If not, whatever. It's not your computer anyhow.
 ## Git
 
 Open Terminal, run `git`. Install will take place.
+
 Create an ssh key: https://help.github.com/articles/generating-ssh-keys/
+
 Clone this repo to `dev/assets/github/clean-slave`.
 ```
 cd ~/dev/assets/github/clean-slave
@@ -25,13 +27,13 @@ cd ~/dev/assets/github/clean-slave
 
 Run `brew-time.sh` in this repo. It installs the following:
 
-### Binaries
+#### Binaries
 - GNU CoreUtils
 - GNU FindUtils
 - [nvm](https://github.com/creationix/nvm)
 - [ffmpeg](http://ffmpeg.org/
 
-### Applications
+#### Applications
 - [Google Chrome](https://www.google.com/chrome/browser/desktop/)
 - [Firefox](https://www.mozilla.org/en-US/firefox)
 - [MAMP](https://www.mamp.info/en/)
@@ -88,8 +90,6 @@ Install [Composer](https://getcomposer.org):
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 ```
-
-## ssh
 
 
 
