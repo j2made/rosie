@@ -28,10 +28,8 @@ cd ~/dev/assets/github/clean-slave
 Run `brew-time.sh` in this repo. It installs the following:
 
 #### Binaries
-- GNU CoreUtils
-- GNU FindUtils
 - [nvm](https://github.com/creationix/nvm)
-- [ffmpeg](http://ffmpeg.org/
+- [ffmpeg](http://ffmpeg.org/)
 
 #### Applications
 - [Google Chrome](https://www.google.com/chrome/browser/desktop/)
@@ -48,11 +46,18 @@ Run `brew-time.sh` in this repo. It installs the following:
 - [Inconsolata](http://www.levien.com/type/myfonts/inconsolata.html)
 - [Droid Sans Mono](https://www.google.com/fonts/specimen/Droid+Sans+Mono)
 
+## bash_profile
+Copy the `.bash_profile` in this repo to root:
+```
+cp -i .bash_profile ~/.bash_profile
+```
+
 ## Sublime Text
 To open Sublime from Terminal, open terminal and run:
 ```
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
 ```
+Bash profile contains alias `sublime` which allows you to open your current directory using `sublime .`
 
 Sync settings from Dropbox (just make sure to setup Dropbox first):
 ```
@@ -61,13 +66,6 @@ rm -r User
 ln -s ~/Dropbox/Shaun/Dev/Sublime/User
 ```
 
-
-## bash_profile
-Copy the `.bash_profile` in this repo to root:
-
-```
-cp -i .bash_profile ~/.bash_profile
-```
 
 ## NVM
 NVM is installed via homebrew to make like easier. To get the latest verison up and running and set to default:
