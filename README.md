@@ -1,9 +1,9 @@
 # Clean Slave
 
 I abuse my computer: constantly installing things, never really cleaning up, failing
-to remember to repair disc permissions. I treat it like the slave it is.
+to remember to repair disc permissions. On occasion, I try to make nice by treating
+the machine to a spa day - by wiping it entirely.
 
-On occasion, I treat the bleep blop machine to a nice cleaning - by wiping it entirely.
 On such an occastion, this repo provides a simple way to get back to basics in terms
 of the apps and scripts I need for development.
 
