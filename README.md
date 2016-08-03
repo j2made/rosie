@@ -1,13 +1,6 @@
-# Clean Slave
+# Rosie – The Robot Maid
 
-I abuse my computer: constantly installing things, never really cleaning up, failing
-to remember to repair disc permissions. On occasion, I try to make nice by treating
-the machine to a spa day - by wiping it entirely.
-
-On such an occastion, this repo provides a simple way to get back to basics in terms
-of the apps and scripts I need for development.
-
-If this helps you, cool. If not, whatever. It's not your computer anyhow.
+Forked from [@iamhexcoder](https://github.com/iamhexcoder)
 
 # Installations
 
@@ -17,10 +10,9 @@ Open Terminal, run `git`. Install will take place.
 
 Create an ssh key: https://help.github.com/articles/generating-ssh-keys/
 
-Clone this repo to `dev/assets/github/clean-slave`.
-```
-cd ~/dev/assets/github/clean-slave
-```
+Clone this repo and cd into it's directory
+
+Run it with `.rosie.sh`
 
 
 ## Homebrew
@@ -33,9 +25,10 @@ Run `brew-time.sh` in this repo. It installs the following:
 
 #### Applications
 - [Google Chrome](https://www.google.com/chrome/browser/desktop/)
+- [1Password](https://1password.com/)
 - [Firefox](https://www.mozilla.org/en-US/firefox)
 - [MAMP](https://www.mamp.info/en/)
-- [Sublime Text 3](http://www.sublimetext.com/)
+- [Atom](https://atom.io/)
 - [Transmit](https://panic.com/transmit/)
 - [Dropbox](https://www.dropbox.com/)
 - [Slack](https://slack.com/)
@@ -50,25 +43,6 @@ Run `brew-time.sh` in this repo. It installs the following:
 Copy the `.bash_profile` in this repo to root:
 ```
 cp -i .bash_profile ~/.bash_profile
-```
-
-## Sublime Text
-To open Sublime from Terminal, open terminal and run:
-```
-ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
-```
-Bash profile contains alias `sublime` which allows you to open your current directory using `sublime .`
-
-Sync settings from Dropbox (just make sure to setup Dropbox first):
-```
-cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
-rm -r User
-ln -s ~/Dropbox/Shaun/Dev/Sublime/User
-```
-
-Open Sublime and install [Package Control](https://packagecontrol.io/). In Sublime, press ``ctrl+``` and copy in:
-```
-import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 ```
 
 
@@ -93,10 +67,3 @@ Install [Composer](https://getcomposer.org):
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 ```
-
-
-
-
-
-
-
