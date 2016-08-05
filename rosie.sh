@@ -1,51 +1,12 @@
 #!/bin/sh
 
 sh ./scripts/init.sh
-
-read -p "Set Finder Preferences? (yes/no) " prompt
-if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "Yes" ]]
-then
-  sh ./scripts/finder.sh
-else
-  exit 0
-fi
-
-read -p "Run Disk Utilities? (yes/no) " prompt
-if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "Yes" ]]
-then
-  sh ./scripts/diskutility.sh
-fi
-
-
-read -p "Run Homebrew / Caskroom? (yes/no) " prompt
-if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "Yes" ]]
-then
-  sh ./scripts/homebrew.sh
-fi
-
-read -p "Install pip / AWS CLI? (yes/no) " prompt
-if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "Yes" ]]
-then
-  sh ./scripts/aws.sh
-fi
-
-# Install Atom Packages
-# --------------------
-#
-
-# Apps
-packages=(
-  sort-lines
-  acf-snippets
-  atom-material-ui
-  docblockr
-  linter
-  linter-scss-lint
-  oceanic-reef-syntax
-)
-
-echo "installing apm packages..."
-apm install --apmdir="~/.atom/packages" ${packages[@]}
+sh ./scripts/finder.sh
+sh ./scripts/diskutility.sh
+sh ./scripts/brew.sh
+sh ./scripts/vagrant.sh
+sh ./scripts/aws.sh
+sh ./scripts/atom.sh
 
 
 # Install Fonts
@@ -65,6 +26,13 @@ fonts=(
 # install fonts
 echo "installing fonts..."
 brew cask install ${fonts[@]}
+
+# Git Config
+# ------------
+#
+# Copy Git Profile
+echo "setting up bash_profile..."
+cp -i .gitconfig ~/.gitconfig
 
 
 # Bash Profile
@@ -90,8 +58,16 @@ echo "installing node.js..."
 nvm install v5.0 && nvm alias default v5.0
 
 # Install Gulp and Bower
-echo "installing npm modules..."
-npm install -g gulp && npm install -g bower && npm install -g browser-sync
+npm_modules=(
+  gulp
+  bower
+  browser-sync
+  grunt-cli
+)
+
+# install fonts
+echo "installing global npm modules..."
+npm install -g ${npm_modules[@]}
 
 
 # Composer

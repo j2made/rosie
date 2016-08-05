@@ -38,6 +38,8 @@ apps=(
   firefox
   mamp
   transmit
+  sketchup
+  twitter
   slack
   dropbox
   google-drive
@@ -47,6 +49,8 @@ apps=(
   1password
   virtualbox
   docker
+  vagrant
+  sequel-pro
 )
 
 # Install apps to /Applications
