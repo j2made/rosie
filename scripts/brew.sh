@@ -45,7 +45,6 @@ apps=(
   google-drive
   appcleaner
   transmission
-  adobe-creative-cloud
   1password
   virtualbox
   docker
