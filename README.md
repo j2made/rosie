@@ -14,7 +14,6 @@ Clone this repo and cd into it's directory
 
 Run it with `.rosie.sh`
 
-
 ## Homebrew
 
 Run `brew-time.sh` in this repo. It installs the following:
@@ -33,7 +32,6 @@ Run `brew-time.sh` in this repo. It installs the following:
 - [Dropbox](https://www.dropbox.com/)
 - [Slack](https://slack.com/)
 - [AppCleaner](http://www.freemacsoft.net/appcleaner/)
-- [Transmission](http://www.transmissionbt.com/)
 
 #### Fonts
 - [Inconsolata](http://www.levien.com/type/myfonts/inconsolata.html)

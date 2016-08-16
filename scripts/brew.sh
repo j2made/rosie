@@ -20,6 +20,10 @@ brew tap caskroom/versions
 # Apps
 apps=(
   google-chrome
+  adobe-photoshop-cc
+  adobe-illustrator-cc
+  adobe-indesign-cc
+  adobe-acrobat
   slack
   dropbox
   google-drive
