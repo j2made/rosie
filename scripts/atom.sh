@@ -8,8 +8,6 @@ packages=(
   acf-snippets
   atom-material-ui
   docblockr
-  linter
-  linter-scss-lint
   oceanic-reef-syntax
 )
 

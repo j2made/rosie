@@ -8,21 +8,6 @@ fi
 # Update homebrew recipes
 brew update
 
-# Install Brew Packages
-# ---------------------
-
-packages=(
-  nvm
-  ffmpeg
-)
-
-echo "installing packages..."
-brew install ${packages[@]}
-
-
-# Cleanup after yourself
-brew cleanup
-
 # Install Applications
 # --------------------
 #
@@ -35,21 +20,10 @@ brew tap caskroom/versions
 # Apps
 apps=(
   google-chrome
-  firefox
-  mamp
-  transmit
-  sketchup
-  twitter
   slack
   dropbox
   google-drive
   appcleaner
-  transmission
-  1password
-  virtualbox
-  docker
-  vagrant
-  sequel-pro
 )
 
 # Install apps to /Applications
